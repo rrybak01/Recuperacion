@@ -13,9 +13,9 @@ class Ejercicio2 extends React.Component {
     JokeAPI.getJokes()
       .then((res) => res.json())
       .then((data) => this.setState({ listaLibros: data }));
-    fetch('https://v2.jokeapi.dev/joke/Any?lang=es&type=twopart&amount=3')
+    /**fetch('https://v2.jokeapi.dev/joke/Any?lang=es&type=twopart&amount=3')
       .then((resp) => resp.json())
-      .then((data) => this.setState({ listaLibros: data }));
+      .then((data) => this.setState({ listaLibros: data }));**/
   }
 
   render() {
